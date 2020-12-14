@@ -15,9 +15,9 @@ function setup() {
   myWorld = myEngine.world;
 
   box1 = new Box(200,300,50,50);
-  box2 = new Box(500, 100, 50, 100);
+  box2 = new Box(200, 100, 50, 100);
 
-  ground = new Ground(200, 20, 800, 20)
+  ground = new Ground(400,390,800,20)
 
   console.log(ground);
 
@@ -37,6 +37,7 @@ function setup() {
 function draw() {
   background(205,255,255); 
   Engine.update(myEngine);
+
   box1.display();
   box2.display();
   ground.display();
